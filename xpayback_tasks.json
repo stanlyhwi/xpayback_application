@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "8dd76292-4ff1-434b-81a0-d33f54d1680d",
+		"name": "tasks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23391959",
+		"_collection_link": "https://speeding-capsule-280348.postman.co/workspace/My-Workspace~1240f8d1-efed-4af8-850e-5111be7b80df/collection/23391959-8dd76292-4ff1-434b-81a0-d33f54d1680d?action=share&source=collection_link&creator=23391959"
+	},
+	"item": [
+		{
+			"name": "register task1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"full_name\": \"stanly\",\n    \"email\": \"stanlyvincenta86@gmail.com\",\n    \"phone_no\":9095023423,\n    \"password\":\"1234\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/task1/register"
+			},
+			"response": []
+		},
+		{
+			"name": "imageUpload task1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "611d23c9747a40d18ad814d703e327b6",
+							"type": "text"
+						},
+						{
+							"key": "image_file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": "http://localhost:8000/task1/upload_image_file"
+			},
+			"response": []
+		},
+		{
+			"name": "login task1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"stanlyvincenta87@gmail.com\",\n    \"password\":\"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/task1/login"
+			},
+			"response": []
+		},
+		{
+			"name": "register task2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"full_name\": \"stanly\",\n    \"email\": \"stanlyvincenta55@gmail.com\",\n    \"phone_no\":9360158811,\n    \"password\":\"1234\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/task2/register"
+			},
+			"response": []
+		},
+		{
+			"name": "imageUploadf task2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "957e04ba929d4f9b9fd47cc9ed92c2c5",
+							"type": "text"
+						},
+						{
+							"key": "image_file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": "http://localhost:8000/task2/upload_image_file"
+			},
+			"response": []
+		},
+		{
+			"name": "login task2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"stanlyvincenta55@gmail.com\",\n    \"password\":\"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/task2/login"
+			},
+			"response": []
+		}
+	]
+}
