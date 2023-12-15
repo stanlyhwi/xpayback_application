@@ -1,10 +1,10 @@
-#To run the application, use the following command:
+To run the application, use the following command:
 
 uvicorn main:app --reload
 
 
 
-#Notes:
+Notes:
 
 I have included a .env file for your reference. In general, it is not good practice to share the .env file.
 
